@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>NelsonPage</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
         <a href="#formacao">Formação e Idioma</a>
         <a href="#portfolio">Portfólio</a>
         <a href="#contato">Contato</a>
+        <button id = "mudarTema">Mudar tema 🌙</button>
       </nav>
     </header>
 
@@ -35,21 +37,23 @@
       <section id = "portfolio">
         <h1>Portfólio</h1>
         <ul>
-          <li><a href="#">Github</a></li>
+          <li><a href="https://github.com/Neroo2">Github</a></li>
         </ul>
       </section>
 
       <section id = "contato">
         <h1>Contato</h1>
         <form>
-          <input type="text" id = "nome" name="nome" placeholder="Digite aqui seu nome">
-          <input type="email" id = "email" name="email" placeholder="Digite aqui seu email">
-          <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+          <input type="text" id = "nome" name="nome" placeholder="Digite aqui seu nome" required>
+          <input type="email" id = "email" name="email" placeholder="Digite aqui seu email" required>
+          <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" required></textarea>
 
           <button type="submit">Enviar</button>
 
         </form>
       </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
